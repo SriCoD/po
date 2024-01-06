@@ -38,7 +38,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          setSuccess(true)
+          setSuccess(true);
         },
         (error) => {
           setError(true);
@@ -62,7 +62,9 @@ const Contact = () => {
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
-          <span>Hello street New York</span>
+          <span>
+            Hellohjhgggggggggggggggggggggggg street Newhjjjjjkkjkk York
+          </span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
@@ -106,9 +108,9 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name"/>
-          <input type="email" required placeholder="Email" name="email"/>
-          <textarea rows={8} placeholder="Message" name="message"/>
+          <input type="text" required placeholder="Name" name="name" />
+          <input type="email" required placeholder="Email" name="email" />
+          <textarea rows={8} placeholder="Message" name="message" />
           <button>Submit</button>
           {error && "Error"}
           {success && "Success"}
